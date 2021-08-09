@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
+  </head>  
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>      
+    <main>
+      <section class="form">
+        <h4>Contact information</h4>
+        <form>
+          <label class="" for="">E-mail</label> <br>
+          <input type="email" id="" class="form-control-lg" placeholder="Enter your email..." required>
+          <br> <br>
+          <label for="">Phone</label> <br>
+          <input type="tel" id="" class="form-control-lg" placeholder="Enter your phone..." required>
+          <br> <br>
+          <h4>Shipping address</h4>
+          <label for="">Full name</label> <br>
+          <input type="text" id="" class="form-control-lg" value="" required>
+          <br> <br>
+          <label for="">Address</label> <br>
+          <input type="text" id="" class="form-control-lg" placeholder="" required>
+          <br> <br>
+          <label for="">City</label> <br>
+          <input type="text" id="" class="form-control-lg" placeholder="" required>
+          <br> <br>
+          <section class="country-and-zip-code">
+            <section>
+              <label for="">Country</label> <br>
+              <input list="countryList" type="text" id="" class="form-control-lg" placeholder="Select your country" required>
+              <datalist id="countryList">
+              <option value=""></option>
+            </datalist>
+            </section>
+            <section>
+              <label for="">Postal code</label> <br>
+              <input type="text" id="" class="form-control-lg" placeholder="" required>
+            </section>
+            
+          </section>
+          <input type="checkbox" id="" class="">
+          <label for="">Save this information for next time</label>
+          <br> <br>
+          <input type="submit" class="submitBtn" id="submit" value="Continue" required>
+        </form>
+      </section>
+      <section class="itemBox">
+        <section class="item">
+            <img src="photo1.png" alt="Vintage Backbag">
+          <section class="item-info">
+            <p>Vintage Backbag</p>
+            <p><span class="orange">$54.99</span><del>$94.99</del> </p>
+            <section class="quantity">
+              <button class="minus">-</button>
+              <input class ="itemNum" type="number" value="1" min="1" max="5" disabled>
+              <button class="plus">+</button>
+            </section>
+          </section>
+        </section>
+        <section class="item">
+            <img src="photo2.png" alt="Levi Shoes">
+          <section class="item-info">
+            <p>Levi Shoes</p>
+            <p><span class="orange">$74.99</span> <del>$124.99</del> </p>
+            <section class="quantity">
+              <button class="minus">-</button>
+              <input class ="itemNum" type="number" value="1" min="1" max="5" disabled>
+              <button class="plus">+</button>
+            </section>
+          </section>
+        </section>
+        <section class="priceSec"> <hr>
+          <section class="price">
+            <h6>Shipping</h6>
+            <h6>$19</h6>
+          </section> <hr>
+          <section class="price">
+            <h6>Total</h6>
+            <h6>$148.98</h6>
+          </section>
+        </section>
+      </section>  
+    </main>
+    
+  </body>
+</html>
