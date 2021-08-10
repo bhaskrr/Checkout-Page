@@ -174,8 +174,11 @@ footer > p > a {
     #input_country, #input_postcode {
         width: 65%;
     }
-    .input-icon > input, #input_country, #input_postcode {
+    .input-icon > input  {
         font-size: 1rem;
+    }
+    #input_country, #input_postcode {
+        font-size: 0.5rem;
     }
     .material-icons {
         margin: 0.2rem;
