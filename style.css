@@ -30,7 +30,7 @@ label {
 }
 .input-icon {
     border-radius: 0.5rem;
-    border: 1px solid rgb(100,100,100);
+    border: 1px solid rgb(100, 100, 100);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -146,11 +146,69 @@ footer > p > a {
         flex-direction: column-reverse;
     }
 }
+
+@media screen and (max-width:526px) {
+    body {
+        margin: 1rem 1rem;
+    }
+    .input-icon > input {
+        width: 87%;
+    }
+    #input_country, #input_postcode {
+        width: 70%;
+    }
+}
+@media screen and (max-width:426px) {
+    img {
+        width: 5rem;
+        height: 5rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+    
+    
+    
+    .input-icon > input {
+        width: 85%;
+    }
+    #input_country, #input_postcode {
+        width: 65%;
+    }
+    .input-icon > input, #input_country, #input_postcode {
+        font-size: 0.5rem;
+    }
+    .material-icons {
+        margin: 0.2rem;
+    }
+    .item {
+        padding: 1rem 1rem 0 1rem;
+    }
+    strong {
+        font-size: 1rem;
+    }
+    .priceSec {
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1.5rem;
+    }
+    .quantity {
+        padding: 0.2rem;
+        border-radius: 1rem;
+    }
+} 
 @media screen and (max-width:375px) {
     body {
         margin: 1rem 1rem;
     }
     .item-info > p {
         font-size: 0.1rem;
+    }
+}
+@media screen and (max-width:321px) {
+    .input-icon > input {
+        width: 82%;
+    }
+    #input_country, #input_postcode {
+        width: 61%;
     }
 }
