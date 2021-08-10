@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      maximum-scale=5"
+    />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+  </head>  
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>      
+    <main>
+      <section class="form">
+        <h3>Contact information</h3>
+        <form>
+          <label for="input_email">E-mail</label> <br>
+          <section class="input-icon">
+            <span class="material-icons">email </span>
+            <input type="email" id="input_email" placeholder="Enter your email..." required>
+          </section>
+          <br>
+
+          <label for="input_phone">Phone</label> <br>
+          <section class="input-icon">
+            <span class="material-icons">phone</span>
+            <input type="tel" id="input_phone" placeholder="Enter your phone..." required>
+          </section>
+          <br> <br>
+
+          <h3>Shipping address</h3>
+          <label for="input_name">Full name</label> <br>
+          <section class="input-icon">
+            <span class="material-icons">account_circle</span>
+            <input type="text" id="input_name" value="Rodney Cotton" required>
+          </section>
+          <br>
+
+          <label for="input_address">Address</label> <br>
+          <section class="input-icon">
+            <span class="material-icons">home</span>
+            <input type="text" id="input_address" placeholder="Your address.." required>
+          </section>
+          <br>
+
+          <label for="input_city">City</label> <br>
+          <section class="input-icon">
+            <span class="material-icons">location_city</span>
+            <input type="text" id="input_city" placeholder="Your city.." required>
+          </section>
+          
+          <br>
+          <section class="country-and-zip-code">
+            <section>
+              <label for="input_country">Country</label> <br>
+              <section id="country" class="input-icon">
+                <span class="material-icons">public</span>
+                <input list="countryList" id="input_country" class="" type="text" placeholder="Your country.." required>
+              </section>
+              <datalist id="countryList">
+                 <option value="India"></option>
+                 <option value="USA"></option>
+                 <option value="Russia"></option>
+                 <option value="Germany"></option>
+              </datalist>
+            </section>
+
+            <section>
+              <label for="input_postcode">Postal code</label> <br>
+              <section class="input-icon">
+                <span class="material-icons">markunread_mailbox</span>
+                <input type="text" id="input_postcode" class="" placeholder="Your postal code.." required>
+              </section>
+            </section>
+          </section>
+          <br>
+
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox">Save this information for next time</label>
+          <br> <br>
+          <input type="submit" class="submitBtn" id="submit" value="Continue" required>
+        </form>
+      </section>
+
+      <section class="itemBox">
+        <section class="item">
+            <img src="photo1.png" alt="Vintage Backbag">
+          <section class="item-info">
+            <p>Vintage Backbag</p>
+            <p><strong><span class="orange">$54.99</span></strong> <del>$94.99</del> </p>
+            <section class="quantity">
+              <button id="minusBtn1" class="itemBtn">-</button>
+              <input id="input1" class="itemNum" type="number" value="1" min="1" disabled>
+              <button id="plusBtn1" class="itemBtn">+</button>
+            </section>
+          </section>
+        </section>
+
+        <section class="item">
+            <img src="photo2.png" alt="Levi Shoes">
+          <section class="item-info">
+            <p>Levi Shoes</p>
+            <p><strong><span class="orange">$74.99</span></strong> <del>$124.99</del> </p>
+            <section class="quantity">
+              <button id="minusBtn2" class="itemBtn">-</button>
+              <input id="input2" class="itemNum" type="number" value="1" min="1" max="5" disabled>
+              <button id="plusBtn2" class="itemBtn">+</button>
+            </section>
+          </section>
+        </section>
+
+        <section class="priceSec"> <hr>
+          <section class="price">
+            <span>Shipping</span>
+            <span>$19</span>
+          </section> <hr>
+          <section class="price">
+            <span>Total</span>
+            <span>$148.98</span>
+          </section>
+        </section>
+      </section>  
+
+    </main>
+    <br>
+    <br>
+    <footer>
+      <p>Created by <a href="https://github.com/bhaskrr" target="_blank">Bhaskar Bordoloi</a> - <a href="https://devchallenges.io/">Devchallanges.io</a></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
