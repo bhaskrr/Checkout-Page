@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-/** {
+* {
     border: 1px solid red;
-}*/
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 5rem 15rem;
@@ -99,10 +99,13 @@ strong {
     justify-content: space-between;
 }
 .quantity {
+    width: fit-content;
     padding: 1rem;
+    margin: 0 auto;
     text-align: center;
-    border: 1px solid rgb(160,160,160);
     border-radius: 1rem;
+    display: flex;
+    border: 1px solid rgb(160,160,160);
 }
 .quantity > input {
     width: 2rem;
@@ -177,6 +180,7 @@ footer > p > a {
     #input_country, #input_postcode {
         font-size: 0.5rem;
     }
+
     .material-icons {
         margin: 0.2rem;
     }
@@ -200,9 +204,6 @@ footer > p > a {
     body {
         margin: 1rem 1rem;
     }
-    .item-info > p {
-        font-size: 1rem;
-    }
 }
 @media screen and (max-width:321px) {
     .input-icon > input {
@@ -210,5 +211,18 @@ footer > p > a {
     }
     #input_country, #input_postcode {
         width: 61%;
+    }
+    .checkbox_label {
+        font-size: 0.8rem;
+    }
+    .item-info > p {
+        font-size: 0.6rem;
+    }
+    .quantity {
+        width: fit-content;
+        padding: none;
+    }
+    .quantity > input {
+        width: 1rem;
     }
 }
